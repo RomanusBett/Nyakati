@@ -9,9 +9,16 @@ def member_login(request):
     email = request.data.get('email')
     password = request.data.get('password')
         
-    user = authenticate(request=None, email=email, password=password)
+    member = authenticate(request=None, email=email, password=password)
         
-    if user is not None:
-        return Response({'detail': 'Login successful'}, status=status.HTTP_200_OK)
+    if member is not None:
+        refresh = RefreshToken.for_user(member)
+        return Response(
+            {
+                'refresh': str(refresh),
+                'access': str(refresh.access_token),
+                'detail': 'Login successful'
+            },
+            status=status.HTTP_200_OK)
     else:
         return Response({'detail': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
