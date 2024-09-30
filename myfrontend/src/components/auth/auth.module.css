@@ -1,0 +1,122 @@
+.registrationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #036a73, #0033a1);
+    width: 100%;
+    height: 100vh;
+}
+
+.formWrapper {
+    height: 70vh;
+    width: 27%;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10% 10% 1% 10%;
+    gap: 20px;
+}
+
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 1px solid rgb(205, 205, 205);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.formInputsWrapper,
+.formBreak,
+.formBreakpassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    width: 70%; 
+    padding: 5px;
+}
+
+.formBreak {
+    width: 100%;
+}
+
+.formBreakpassword {
+    width: 70%;
+    align-items: end;
+    justify-content: end;
+}
+.socialAuthWrapper{
+    width:87%;
+}
+.formGroup input,
+.formGroup button,
+.socialAuthWrapper button {
+    width: 100%;
+    border-radius: 5px;
+    height: 2rem;
+    border: 1px solid rgb(205, 205, 205);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.formGroup input {
+    background-color: #ffff;
+}
+
+.formGroup input:user-valid {
+    outline-color: #28a745;
+}
+
+.formGroup input:user-invalid {
+    outline-color: #dc3545;
+}
+
+.formGroup button {
+    background-color: #28a745;
+    border: none;
+    color: #ffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.socialAuthWrapper button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    color: rgb(105, 105, 105);
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.formGroup label {
+    color: rgb(105, 105, 105);
+    font-family: sans-serif;
+}
+
+.formGroup label,
+.formBreak p,
+.formBreakpassword p {
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.logoImage {
+    padding: 10px;
+    height: 3rem;
+    width: 4rem;
+}

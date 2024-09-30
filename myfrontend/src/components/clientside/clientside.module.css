@@ -1,0 +1,98 @@
+.homeContainer{
+    background-image: linear-gradient(to bottom right, #00beaf, #0033a1);
+    height: 100vh;
+}
+.homeNav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.appntsBox{
+    width: 100%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appointmentsGroup{
+    height: 70vh;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+.appointmentsBox,
+.appointmentsGroup{
+    background-color: #ffff;
+}
+.appointmentsTable{
+    width: 100%;
+}
+.eventBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.appointmentsGroup h1{
+    color: #0033a1;
+}
+.nameBox{
+    padding-right: 5%;
+}
+.homelogoBox{
+    padding-left: 10%;
+}
+.appointmentsBox{
+    width: 60%;
+}
+.logoImage{
+    width: 4rem;
+    height: 2rem;
+}
+.introName,
+.identifier{
+    opacity: .8;
+    font-size: .9rem;
+}
+.nameField{
+    color: #1fe84e;
+    font-weight: 700;
+}
+.slotContainer{
+    width: 50%;
+    border: 1px solid black;
+    padding-bottom: 10px;
+}
+.gridWrapper{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 1%;
+    padding-top: 10px;
+}
+.gridItem{
+    display: flex;
+    align-items: center;
+}
+.gridTimeSelect{
+    display: flex;
+    gap: 2%;
+}
+.timeSelectBox{
+    border: 1px solid black;
+    padding: 5px;
+}
+.cButton{
+    background-color: #28a745;
+    border: none;
+    width: 3rem;
+    height: 2rem;
+    border-radius: 2px;
+    color: #ffff;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.editButton{
+
+}

@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from myapp.appAuth.accountActivate import ActivateMember
 from myapp.appAuth import register
+from myapp.appAuth import userlogin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('activate/<uidb64>/<token>/', ActivateMember.as_view(), name='activate'),
-    path('accounts/register', register.registration, name='registration')
+    path('accounts/register', register.registration, name='registration'),
+    path('accounts/login', userlogin.loginuser, name='login')
 ]
