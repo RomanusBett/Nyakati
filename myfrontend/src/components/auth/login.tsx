@@ -11,12 +11,13 @@ const Login: React.FC = () => {
 
     const submit = async (e:React.FormEvent)=>{
         e.preventDefault();
-
         (async ()=>{
             const user = {
                 email: email,
                 password: password
             }
+            console.log(user);
+            
     
             const config: AxiosRequestConfig = {
                 headers : {
@@ -26,16 +27,8 @@ const Login: React.FC = () => {
             const response: AxiosResponse = await axios.post('http://localhost:32000/accounts/login', user, config);
             console.log(response.status);
             console.log(response.data);
-            
         })()
 
-    }
-
-    const onchangeEmail = (e:React.ChangeEvent<HTMLInputElement>)=>{
-        setEmail(e.target.value);
-    }
-    const onchangePassword  = (e:React.ChangeEvent<HTMLInputElement>) =>{
-        setPassword(e.target.value)
     }
 
     return (
@@ -51,8 +44,8 @@ const Login: React.FC = () => {
                     <p>Or</p>
                 </div>
                 <form className={styles.formInputsWrapper} onSubmit={submit}>
-                    <FormGroupEl label='Email' type='email' name='email' onChange={onchangeEmail} />
-                    <FormGroupEl label='password' type='password' name='password' onChange={onchangePassword}/>
+                    <FormGroupEl label='Email' type='email' name='email' onChange={(e)=>{setEmail(e.target.value)}} />
+                    <FormGroupEl label='password' type='password' name='password' onChange={(e)=>{setPassword(e.target.value)}}/>
                     <div className={styles.formBreakpassword}>
                         <p>forgot password?</p>
                     </div>
