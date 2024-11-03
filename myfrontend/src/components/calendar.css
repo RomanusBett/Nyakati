@@ -1,0 +1,20 @@
+.weekday {
+    border-collapse: collapse; 
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+.date-cell{
+    border-bottom: 1px solid #ccc;
+}
+
+.date-cell:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.date-cell:last-child{
+    border-bottom: none;
+}
