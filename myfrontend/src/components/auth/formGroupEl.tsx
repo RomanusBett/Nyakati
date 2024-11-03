@@ -12,7 +12,7 @@ const FormGroupEl: React.FC<formGroupElProps> = ({label, type, name, onChange})=
 return (
     <div className={styles.formGroup}>
         <label>{label}</label>
-        <input className={styles.formInput} type={type} name={name} onChange={e=>onChange}/>
+        <input className={styles.formInput} type={type} name={name} onChange={e=>onChange(e)}/>
     </div>
 )
 }
